@@ -1,0 +1,22 @@
+{
+  "name": "screenshots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^3.26.7",
+    "jest": "^24.9.0",
+    "jest-image-snapshot": "^2.11.1",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
+  }
+}
