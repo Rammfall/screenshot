@@ -1,7 +1,7 @@
 module.exports = [
   '',
-  'projects/',
-  'projects/case-milan-style',
-  'services/ui-ux-design-services',
-  'landings/about-us'
+  'services/web-development',
+  'services/ux-design-review-services',
+  'company/about',
+  'case-studies/campsited'
 ];
