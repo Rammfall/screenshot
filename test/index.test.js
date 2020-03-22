@@ -2,8 +2,9 @@ const puppeteer = require('puppeteer');
 
 const browserConfig = require('./../config/browser');
 const resolutions = require('./../config/resolutions');
-const pages = require('./../config/pages');
+const { pages, url } = require('./../config/pages');
 const scroll = require('./utils/scrollAllPage');
+
 
 describe.each(pages)('Page %p',  (currentPage) => {
   let browser;
@@ -13,7 +14,7 @@ describe.each(pages)('Page %p',  (currentPage) => {
     browser = await puppeteer.launch(browserConfig);
     page = await browser.newPage();
 
-    await page.goto(`https://rubygarage.org/${currentPage}`);
+    await page.goto(`${url}/${currentPage}`);
   });
 
   test.each(resolutions)('Test screenshot on %i width, height %i > %s', async (width, height, d) => {
